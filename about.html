@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="themify-icons.css">
+    <link rel="stylesheet" href="remix-icon/remixicon.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/Favvicon.png">
+    <title>Lanre Malumi - About</title>
+    
+</head>
+
+<body>
+    <div class="about-hero-section">
+        <div class="dropdown-container">
+
+            <div class="drop-down">
+                <img src="img/Group 16.svg" alt="">
+                <a href="index.html">Home</a>
+                <a href="about.html">About me</a>
+                <a href="project.html">Projects</a>
+                <a href="index.html#contact">Work with me</a>
+            </div>
+        </div>
+        <header>
+            <div class="container">
+                <span class="logo">Lanre Malumi</span>
+                <div class="hamburger">
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                    <div class="line line3"></div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="about-main-section">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="text-container" data-entrance="from-left">
+                    <span class="about-ext">About Me</span>
+                    <p>Hi, I'm Lanre Malumi, a user interface designer based in Lagos. With a background in graphics design, I possess strategic thinking skills and a preternatural attention span for details which have over the years been groomed through logic-brain games. I strive to take every opportunity to grow through collaboration, trainings and online resources. Tools i'm highly proficient in include: Wordpress, Adobe Xd, Figma, Adobe Photoshop.</p>
+                    <p>As a relentless problem solver with unquenchable curiosity who can't help but analyze and try to improve everything I see, I have always been fascinated with how a creative outlook plays a vital role in life. I'm ready to take on new challenges and opportunity to showcase my abilities.</p>
+                </div>
+                <div class="image-container" data-entrance="from-right">
+                    <img src="img/Repeat Grid 4.svg" alt="" class="first-image">
+                    <img src="img/about.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="base-container" data-entrance="fade">
+        <h1>Got a project in mind? Let's make <br>something awesome together</h1>
+        <button onclick="location.replace('index.html#contact')" target="blank">Let's work together</button>
+    </div>
+    <div class="portfolio-footer" id="contact">
+
+        <div class="container">
+            <footer>
+                <div class="left">
+                    <p> Designed and built with <i class="fa fa-heart"></i>
+                    </p>
+                </div>
+                <!-- <div class="left">
+                    <p> &copy; Lanre Malumi - <span class="year"></span></p>
+                </div> -->
+                <div class="right">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+    <script>
+        // Menu
+        let burger = document.querySelector(".hamburger"),
+            burgerLines = document.querySelectorAll('.hamburger-lines'),
+            dropdown = document.querySelector('.dropdown-container'),
+            dropdownLinks = document.querySelectorAll('.drop-down a');
+        console.log(dropdownLinks);
+        burger.addEventListener('click', () => {
+            dropdown.classList.toggle('dropdown-show');
+            burger.classList.toggle('toggle');
+            dropdownLinks.forEach((links, index) => {
+                if (links.style.animation) {
+                    links.style.animation = ``
+                } else {
+                    links.style.animation = `slideIn .4s forwards ${index*0.4 + 0.5}s`
+                }
+
+            });
+
+        })
+        window.addEventListener('scroll', () => {
+            burger.classList.remove('toggle');
+            dropdown.classList.remove('dropdown-show');
+            dropdownLinks.forEach(links => {
+                links.style.animation = ``;
+            })
+        })
+    </script>
+    <script src="js/scroll-entrance.js"></script>
+</body>
+
+</html>
