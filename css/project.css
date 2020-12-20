@@ -1,7 +1,7 @@
 body {
   -webkit-transition: ease .35s;
   transition: ease .35s;
-  font-family: inconsolata;
+  font-family: 'jost';
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow-x: hidden;

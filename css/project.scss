@@ -1,12 +1,12 @@
 $light-blue:#72C6EF;
 $dark-blue: #0e65ac;
 $primary-color:linear-gradient(to right, #72C6EF, #0e65ac);
-$primary-font:Inconsolata;
+$primary-font: 'jost';
 $white-color:rgb(252, 250, 250);
 $black: rgb(56, 56, 56);
 body {
     transition: ease .35s;
-    font-family: inconsolata;
+    font-family: 'jost';
     box-sizing: border-box;
     overflow-x: hidden;
     color: $black;
