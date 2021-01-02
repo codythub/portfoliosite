@@ -1,7 +1,7 @@
 body {
   -webkit-transition: ease .35s;
   transition: ease .35s;
-  font-family: 'jost';
+  font-family: 'Jost';
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow-x: hidden;
@@ -626,7 +626,7 @@ html {
 .works .work {
   width: 100%;
   position: relative;
-  opacity: 0;
+  opacity: 1;
 }
 
 .work img {
@@ -754,7 +754,7 @@ html {
   z-index: -1;
   width: 300px;
   top: 10px;
-  right: 5em;
+  right: 3em;
 }
 
 .right input, .right select, .right .message textarea {
@@ -1251,6 +1251,7 @@ footer .right a:hover {
   }
   .contact-wrapper .left img {
     top: 5px;
+    left: .5em;
     width: 250px;
   }
   .right .wrapper-2 {
@@ -1304,6 +1305,31 @@ footer .right a:hover {
   }
   .right .message textarea {
     width: 135%;
+  }
+  .scroll-up {
+    width: 9em;
+    background-color: transparent;
+    position: absolute;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    bottom: -20px;
+    z-index: 4;
+    -webkit-transition: ease .25s;
+    transition: ease .25s;
+    right: 5em;
+  }
+  .scroll-up a {
+    text-decoration: none;
+    color: #383838;
+  }
+  .scroll-up i {
+    -webkit-animation: bounce 1s infinite;
+            animation: bounce 1s infinite;
+  }
+  .scroll-up {
+    right: 30px;
+    bottom: -40px;
   }
   .portfolio-footer {
     padding: 20px 0;
@@ -1384,8 +1410,8 @@ footer .right a:hover {
   }
   .scroll-down {
     position: absolute;
-    -webkit-transform: translateY(-6em);
-            transform: translateY(-6em);
+    -webkit-transform: translateY(-4em);
+            transform: translateY(-4em);
   }
   .hamburger {
     right: 30px;
@@ -1433,6 +1459,15 @@ footer .right a:hover {
   .toggle .line3 {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
+  }
+  .contact-wrapper .left img {
+    top: 5px;
+    right: 0em;
+    width: 250px;
+  }
+  .scroll-up {
+    -webkit-transform: translateY();
+            transform: translateY();
   }
 }
 

@@ -6,7 +6,7 @@
     $black: rgb(56, 56, 56);
     body {
         transition: ease .35s;
-        font-family: 'jost';
+        font-family: 'Jost';
         box-sizing: border-box;
         overflow-x: hidden;
         color: $black;
@@ -540,7 +540,7 @@
         padding-top: 25px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        row-gap: 1em;
+        row-gap: 1em; 
         position: relative;
     }
     
@@ -553,7 +553,7 @@
     .works .work {
         width: 100%;
         position: relative;
-        opacity: 0;
+        opacity: 1;
     }
     
     .work img {
@@ -669,7 +669,7 @@
         z-index: -1;
         width: 300px;
         top: 10px;
-        right: 5em;
+        right: 3em;
     }
     
     %default {
@@ -1129,6 +1129,7 @@
         }
         .contact-wrapper .left img {
             top: 5px;
+            left: .5em;
             width: 250px;
         }
         .right .wrapper-2 {
@@ -1169,6 +1170,32 @@
                 width: 135%;
             }
         }
+        .scroll-up {
+            width: 9em;
+            background-color: transparent;
+            position: absolute;
+            display: block;
+            text-align: center;
+            // box-shadow: 5px 5px 10px 8px rgb(231, 231, 231);
+            padding: 10px;
+            a {
+                text-decoration: none;
+                color: $black;
+            }
+            bottom: -20px;
+            z-index: 4;
+            transition: ease .25s;
+            right: 5em;
+            i {
+                animation: bounce 1s infinite;
+            }
+        }
+        .scroll-up {
+            right: 30px;
+            bottom: -40px;
+          
+        }
+            
         .portfolio-footer {
             padding: 20px 0;
         }
@@ -1238,7 +1265,7 @@
         }
         .scroll-down {
             position: absolute;
-            transform: translateY(-6em);
+            transform: translateY(-4em);
         }
         .hamburger {
             right: 30px;
@@ -1281,6 +1308,14 @@
             .line3 {
                 transform: rotate(-45deg);
             }
+        }
+        .contact-wrapper .left img {
+            top: 5px;
+            right: 0em;
+            width: 250px;
+        }
+        .scroll-up{
+            transform: translateY();
         }
     }
     

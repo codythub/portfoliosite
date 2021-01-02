@@ -26,14 +26,14 @@ window.addEventListener('scroll', () => {
 // Cards animation
 let works = document.querySelectorAll('.work');
 
-function scrollEffect() {
-    works.forEach((work, index) => {
-        if (work.getBoundingClientRect().top < window.innerHeight) {
-            work.style.animation = `slideIn .4s forwards ${index/0.2}s`;
-        }
-    })
-}
-window.addEventListener('scroll', scrollEffect);
+// function scrollEffect() {
+//     works.forEach((work, index) => {
+//         if (work.getBoundingClientRect().top < window.innerHeight) {
+//             work.style.animation = `slideIn .4s forwards ${index/0.2}s`;
+//         }
+//     })
+// }
+// window.addEventListener('scroll', scrollEffect);
 // Scroll Up effect
 
 
